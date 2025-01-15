@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Red Hat Display", serif;
+  font-size: 16px;
+  background-image: url("../dart-sass/sass/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.card .card-content {
+  margin-top: 25px;
+  text-align: center;
+}
+.card .title {
+  font-weight: 900;
+  font-size: 32px;
+}
+.card .subtitle {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 25px 20px 25px;
+  color: hsla(101.35, 15.45%, 64.61%, 0.71);
+}
+
+.card-plan {
+  margin: 0 25px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.card-plan .card-plan_left {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card-plan .card-plan_text p {
+  font-weight: 900;
+  padding-left: 15px;
+}
+.card-plan .card-plan_text span {
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 15px;
+  color: hsla(101.35, 15.45%, 64.61%, 0.71);
+}
+.card-plan .change-link {
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+.card-plan .change-link:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+
+.proceed-btn {
+  display: block;
+  font-weight: 900;
+  border-radius: 7px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: hsl(245, 75%, 52%);
+  margin-top: 25px;
+  color: #fff;
+  box-shadow: 3px 7px 1px 0px hsla(202.57, 100%, 91.11%, 0.67);
+  transition: background-color 0.3s ease;
+}
+.proceed-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.Cancel-btn {
+  display: block;
+  margin: 25px;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  color: hsla(88.06, 12.02%, 24.32%, 0.87);
+  transition: color 0.3s ease;
+}
+.Cancel-btn:hover {
+  color: hsl(224, 23%, 55%);
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url("../dart-sass/sass/images/pattern-background-mobile.svg");
+  }
+  .card {
+    max-width: 87%;
+  }
+  .card .title {
+    font-size: 22px;
+  }
+  .card .subtitle {
+    font-size: 13px;
+  }
+  .card-content {
+    margin-top: 18px;
+  }
+  .card-plan {
+    margin: 0 20px;
+  }
+  .card-plan_left .card-plan_text p {
+    font-size: 14px;
+    padding-left: 14px;
+  }
+  .card-plan_left .card-plan_text span {
+    font-size: 12px;
+    padding-left: 14px;
+  }
+  .change-link {
+    font-size: 14px;
+  }
+  .proceed-btn {
+    font-size: 14px;
+  }
+  .Cancel-btn {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

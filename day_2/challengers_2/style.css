@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+  background-color: hsl(233, 47%, 7%);
+  min-height: 100vh;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.container .stat-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.container .stat-card .content {
+  padding: 13%;
+}
+.container .stat-card .content .title {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 27px;
+  font-family: "Lexend Deca", serif;
+}
+.container .stat-card .content span {
+  color: hsl(277, 64%, 61%);
+}
+.container .stat-card .content .subtitle {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+}
+.container .stat-card .content .list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.container .stat-card .content .list li span {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+}
+.container .stat-card .content .list li p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 10px;
+}
+.container .stat-card .bg-img {
+  position: relative;
+}
+.container .stat-card .bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .stat-card .bg-img:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: hsl(244, 38%, 16%);
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    text-align: center;
+  }
+  .container {
+    max-width: 87%;
+  }
+  .container .stat-card {
+    grid-template-columns: 1fr;
+  }
+  .container .stat-card .content {
+    margin: 8%;
+  }
+  .container .stat-card .content .title {
+    font-size: 22px;
+  }
+  .container .stat-card .content .subtitle {
+    font-size: 14px;
+  }
+  .container .stat-card .content .list {
+    flex-direction: column;
+  }
+  .container .stat-card .content .list span {
+    padding-bottom: 22px;
+  }
+  .container .stat-card .bg-img {
+    order: -1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

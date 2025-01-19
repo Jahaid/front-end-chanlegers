@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", serif;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+
+    .stat-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 15px;   
+        overflow: hidden;
+
+        .content{
+            padding: 13%;
+
+            .title{
+                font-weight: 700;
+                color: hsl(0, 0%, 100%);
+                //font-size: 35px;
+                padding-bottom: 27px;
+                font-family: "Lexend Deca", serif;
+            }
+            span{
+                color:  hsl(277, 64%, 61%);
+            }
+
+            .subtitle{
+                color: hsla(0, 0%, 100%, 0.75);
+                line-height: 1.8;
+            }
+
+            .list{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                text-transform: uppercase;
+                margin-top: 60px;
+
+                li{
+                    span{
+                        font-weight: 700;
+                        color: hsl(0, 0%, 100%);
+                        font-size: 25px;
+                        //padding-bottom: 25px;
+    
+                    }
+                    p{
+                      color: hsla(0, 0%, 100%, 0.75);
+                      padding-top: 10px;
+                    }
+
+                }
+
+            }
+        }
+        .bg-img{
+            position: relative;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &:after{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                background-color:  hsl(244, 38%, 16%);
+                opacity: .6;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        
+       
+    }
+}
+@media only screen and (max-width: 425px){
+    body{
+        text-align: center;
+    }
+    .container{
+        max-width: 87%;
+
+        .stat-card{
+            grid-template-columns: 1fr;
+
+            .content{
+                margin: 8%;
+
+                .title{
+                    font-size: 22px;
+                }
+                .subtitle{
+                    font-size: 14px;
+                }
+                .list{
+                    flex-direction: column;
+                    //margin-top: 22px;
+
+                    span{
+                        padding-bottom: 22px;
+                    }
+                }
+            }
+
+            .bg-img{
+                order: -1;
+            }
+        }
+    }
+}

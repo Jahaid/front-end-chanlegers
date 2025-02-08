@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.hero {
+  background-color: #f6f6f6;
+  background-image: url("../dart-sass/huddle/images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 200px;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.top-header .logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+.btn {
+  margin-left: auto;
+  display: block;
+  background-color: #fff;
+  color: hsl(192, 100%, 9%);
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  text-decoration: none;
+  box-shadow: 0px 5px 9px -1px #eddfdf;
+  transition: all 3s ease-out;
+  cursor: pointer;
+}
+.btn:hover {
+  color: hsl(120, 100%, 99%);
+  background-color: rgb(64, 67, 62);
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 700px;
+  column-gap: 40px;
+  margin-top: 70px;
+}
+
+img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+.for_mobile {
+  display: none;
+}
+
+.content {
+  margin-top: 95px;
+}
+.content .text {
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  padding: 30px 0;
+}
+.content .btn-start {
+  display: block;
+  width: 300px;
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  text-decoration: none;
+  transition: all 3s ease-out;
+  cursor: pointer;
+}
+.content .btn-start:hover {
+  color: hsl(120, 100%, 99%);
+  background-color: rgb(64, 67, 62);
+}
+
+.box-component {
+  margin-bottom: 80px;
+}
+
+.wpapper {
+  margin-top: 70px;
+  box-shadow: 1px 4px 9px -1px #eddfdf;
+  border-radius: 15px;
+}
+
+.inner {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 60px;
+  margin-right: 15px;
+}
+.inner .box-flex {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  column-gap: 50px;
+  padding: 30px 0;
+}
+.inner .box {
+  max-width: 600px;
+  margin: auto 15px;
+}
+.inner .box p {
+  font-weight: 400;
+  color: #878080;
+  font-size: 20px;
+  padding-top: 15px;
+}
+.inner .box-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.community {
+  color: #000;
+  max-width: 800px;
+  box-shadow: 1px 4px 9px -1px #eddfdf;
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 200;
+  margin-bottom: -130px;
+}
+.community h2 {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.community .btn-start {
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  text-decoration: none;
+  transition: all 3s ease-out;
+  cursor: pointer;
+}
+.community .btn-start:hover {
+  color: hsl(120, 100%, 99%);
+  background-color: rgb(64, 67, 62);
+}
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #ded7d7;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  z-index: 100;
+  overflow: hidden;
+}
+.footer .logo {
+  filter: invert(100%) sepia(59%) saturate(8%) hue-rotate(221deg) brightness(102%) contrast(99%);
+  margin-top: 160px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.footer-info {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.localisation-info {
+  display: grid;
+  grid-template-columns: 1fr 200px 200px 300px;
+  column-gap: 40px;
+}
+.localisation-info .list-info {
+  display: inline-block;
+  margin-right: 20px;
+  list-style: none;
+}
+.localisation-info .list-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.localisation-info .list-info li img {
+  width: 100%;
+  max-width: 20px;
+  height: auto;
+  margin-right: 15px;
+}
+.localisation-info .social-box {
+  display: flex;
+  list-style: none;
+}
+.localisation-info .social-box li {
+  display: block;
+  margin-right: 30px;
+  border: 1px solid hsl(193, 100%, 96%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.localisation-info .social-box li:hover {
+  background-color: hsl(322, 100%, 66%);
+}
+.localisation-info .social-box li a {
+  text-decoration: none;
+}
+.localisation-info .social-box li a svg {
+  width: 15px;
+  margin: 7px;
+  display: block;
+}
+.localisation-info .social-box li a img {
+  width: 15px;
+  margin: 7px;
+  display: block;
+}
+
+.COPY {
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 71%;
+}
+.COPY p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 14px;
+  }
+  .hero {
+    background-image: url("../dart-sass/huddle/images/bg-hero-mobile.svg");
+    min-height: 150px;
+  }
+  .container {
+    max-width: 87%;
+    margin: 0 auto;
+  }
+  .top-header .logo {
+    max-width: 100px;
+  }
+  .top-header .btn {
+    padding: 10px 20px;
+    font-weight: 400;
+  }
+  .description {
+    text-align: center;
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
+  img {
+    max-width: 400px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .content .btn-start {
+    display: none;
+  }
+  .for_mobile {
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    transition: all 3s ease-out;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .for_mobile:hover {
+    color: hsl(120, 100%, 99%);
+    background-color: rgb(64, 67, 62);
+  }
+  .wpapper {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .inner {
+    margin: 15px 25px;
+  }
+  .inner .box-img {
+    max-width: 300px;
+    margin: 0 auto;
+    order: -1;
+  }
+  .inner .box-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .inner .box {
+    max-width: 400px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .inner .box p {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  .localisation-info {
+    grid-template-columns: 1fr;
+  }
+  .localisation-info .social-box {
+    margin: 0 auto;
+  }
+  .COPY {
+    left: 14%;
+  }
+  .community {
+    max-width: 364px;
+  }
+  .community h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+  }
+  .community .btn-start {
+    max-width: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

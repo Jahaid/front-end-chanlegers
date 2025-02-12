@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="wpapper">
+      <div class="top-bar">
+        <div class="notification">
+          <p class="title-text">Notifications</p>
+          <p class="num" id="num">3</p>
+        </div>
+        <a class="read-btn" id="read-btn" href="#">Mark all as read</a>
+      </div>
+      <div class="notifications">
+        <div class="single-notify unseen">
+          <div class="Avatar-img">
+            <img src="assets/images/avatar-mark-webber.webp" alt="">
+          </div>
+          <div class="comment">
+            <p><a class="name" href="#">Mark Webber</a>
+              reacted to your recent post<a class="post" href="#">My first tournament today!</a><span class="unread"></span></p>
+            <p class="time">1m ago</p>
+          </div>
+        </div>
+        <div class="single-notify unseen">
+          <div class="Avatar-img">
+            <img src="assets/images/avatar-angela-gray.webp" alt="">
+          </div>
+          <div class="comment">
+            <p><a class="name" href="#">Angela Gray</a>
+              followed you<span class="unread"></span></p>
+            <p class="time">5m ago</p>
+          </div>
+        </div>
+        <div class="single-notify unseen">
+          <div class="Avatar-img">
+            <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+          </div>
+          <div class="comment">
+            <p><a class="name" href="#">Jacob Thompson</a>
+              has joined your group<a class="group" href="#">Chess Club</a>
+              <span class="unread"></span>
+            </p>
+            <p class="time">1 day ago</p>
+          </div>
+        </div>
+        <div class="single-notify box-msg">
+          <div class="comments">
+            <div class="Avatar-img">
+              <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+            </div>
+            <div class="comment">
+              <p><a class="name" href="#">Rizky Hasanuddin</a>
+                sent you a private message</p>
+              <p class="time">5 days ago</p>
+            </div>
+          </div>
+          <div class="message">
+            <p class="msg"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.</p>
+          </div>
+        </div>
+        <div class="single-notify">
+          <div class="Avatar-img">
+            <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+          </div>
+          <div class="comment">
+            <p><a class="name" href="#">Kimberly Smith</a>
+              commented on your picture</p>
+            <p class="time">1 week ago</p>
+          </div>
+          <img src="assets/images/image-chess.webp" alt="">
+        </div>
+        <div class="single-notify">
+          <div class="Avatar-img">
+            <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+          </div>
+          <div class="comment">
+            <p><a class="name" href="#">Nathan Peterson</a>
+              reacted to your recent post<a class="post" href="#">5 end-game strategies to increase your win rate</a></p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="single-notify">
+          <div class="Avatar-img">
+            <img src="assets/images/avatar-anna-kim.webp" alt="">
+          </div>
+          <div class="comment">
+            <p><a class="name" href="#">Anna Kim</a>
+              Kim left the group<a class="group" href="#">Chess Club</a></p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="button.js"></script>
+</body>
+</html>
